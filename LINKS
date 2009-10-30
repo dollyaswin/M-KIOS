@@ -1,0 +1,22 @@
+login:
+http://mkios.telkomsel.com/mkios/index.php?do=common.login
+post :
+challenge : "8dfe0e056e650a42e335f7ce1ff3beb4bb3c931017622a51e96d03c22c6ea235d617937bbedd92e7"
+username : ''
+password : md5(challange+password)
+
+recharge:
+http://mkios.telkomsel.com/mkios/index.php?do=querytrx.recharge_own
+
+query:
+http://mkios.telkomsel.com/mkios/index.php?do=querytrx.recharge_own
+post = date : 07-11-2008
+
+query more than one page:
+http://mkios.telkomsel.com/mkios/index.php?do=querytrx.recharge_own&post=1&date=24-11-2008&page=2
+
+inventory:
+http://mkios.telkomsel.com/mkios/index.php?do=info.inventory_own
+
+logout: 
+http://mkios.telkomsel.com/mkios/index.php?do=common.logout

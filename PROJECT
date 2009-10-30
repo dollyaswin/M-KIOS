@@ -1,0 +1,20 @@
+Buat namespace untuk handle mkios
+-> setOpener()
+-> grab(op, url, data = None)
+-> filename(type, username, date)
+-> save(filename, rows)
+
+class:
+  login
+  -> init(opener, page, url, username, pin)
+  -> _fetchChallenge()
+  -> do(username, password)
+
+  inventory(page)
+  -> _getRecords()
+  -> rows()
+
+  recharge(page) 
+  -> total()
+  -> _getRecords()
+  -> rows()
